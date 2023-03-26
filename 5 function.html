@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/**** Section 5 👉 Functions in JavaScript ****/
+
+// A JavaScript function is a block of code designed to perform a particular task.
+
+
+
+//  1️⃣Function Definition 
+
+// Before we use a function, we need to define it. 
+
+// A function definition (also called a function declaration, or function statement) 
+// consists of the function keyword, followed by:
+
+// The name of the function.
+// A list of parameters to the function, enclosed in parentheses and separated by commas.
+// The JavaScript statements that define the function, enclosed in curly brackets, {...}.
+
+
+// var a = 10;
+// var b = 20;
+// var sum = a+b;
+// console.log(sum);
+//===================================================eske down ke sath nahi relation
+
+// function sum(){
+//   var a = 10, b = 40;                                  👿 funation declare (define)
+//   var total = a+b;
+//   console.log(total);
+// }
+// // 
+                                                  // 👍 👍
+
+ // in js 
+ // const sum()=>{      funtion name sum
+
+// }
+
+// 2️⃣Calling functions
+// Defining a function does not execute it.
+// A JavaScript function is executed when "something" invokes it (calls it).
+
+
+// function sum(){
+//   var a = 10, b = 40;
+//   var total = a+b;
+//   console.log(total);
+// }
+
+// sum();
+// here we can call mutiple time sum()
+
+ // by the help call the function we can excute any time and reuse it 
+
+// 3️⃣ Function Parameter vs Function Arguments 
+// Function parameters are the names listed in the function's definition. 
+// Function arguments are the real values passed to the function.
+
+
+// function sum(a,b){
+//   var total = a+b;       ---- funcction paramerter vo bhi a,b only means  a,b bhi ko bolegae parameter  jisme function define kiya jata hai not pura 
+//   console.log(total);
+// }
+
+// sum();          it print  NAN             -----  argument empty
+// sum(20,30);                -----function argument  
+// sum(50,50);
+// sum(5,6)
+
+          //  here it use multiple time with diferrnt argument  
+// // **********************************************************************
+
+// // 👉 // 🤩 SUBSCRIBE TO THAPA TECHNICAL YOUTUBE CHANNEL 🤩
+//  👉 // 🤩  https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA
+
+// // **********************************************************************
+
+
+
+
+// 🙋‍👨‍🏫 Interview Question 🙋‍👨‍🏫 
+
+// Why Functions? 
+
+// You can reuse code: Define the code once, and use it many times.
+// You can use the same code many times with different arguments, 
+// to produce different results.
+
+  // OR
+
+  // A function is a group of reusable code which can be called anywhere 
+// in your program. This eliminates the need of writing the same code 
+// again and again.
+
+// DRY => do not repeat yourself  by the help this function we dont use dry  means  reuse
+
+
+
+
+
+
+// 4️⃣ Function expressions
+// "Function expressions simply means 
+// create a function and put it into the variable "
+
+    // here by the help  function expression  funExp dont use parathiese we can like this show below
+//  function sum(a,b){                                  a, b both same hone up and down
+//   var total = a+b;
+//   console.log(total);
+// }
+
+// var funExp = sum(5,15);
+// funExp                          // here we call
+
+
+
+// 5️⃣ Return Keyword
+// When JavaScript reaches a return statement, 
+// the function will stop executing.
+
+// Functions often compute a return value.
+// The return value is "returned" back to the "caller"
+
+
+// function sum(a,b){
+//   return total = a+b;                     yeh chich upere me two line kr rha tha essne single line me kiya  funciton expression is  incompletee without return                                            
+     // yeah confusion console .log nahi krna padega vo use krna paedega  console.log here se in this example  and retur n keyword use kiya to bhar (outside function) use conssole.log
+// }
+
+// var funExp = sum(5,25);
+
+// console.log('the sum of two no is ' + funExp );
+
+
+// 6️⃣ Anonymous Function
+
+// A function expression is similar to and has the same syntax 
+// as a function declaration One can define "named" 
+// function expressions (where the name of the expression might 
+// be used in the call stack for example) 
+// or "anonymous" function expressions.
+
+                                      
+
+
+
+
+
+// anonymous      function   means the function without their name  here  example
+
+//   function(){
+//      retrun a+b                                                the function does not have name
+//   }
+
+
+// anynoums function exparession    yeh jo code  upere wala usko container me dal here example
+
+//   var taerun= function(){
+//      return a+b
+//   }
+//============================================================================
+// var funExp = function(a,b){
+//   return total = a+b;
+// }
+
+//console.log(funExp(45,54))
+
+
+//=====================================================================================
+// var funExp = function(a,b){                       
+//   return total = a+b;
+// }
+
+// var sum = funExp(15,15);
+// var sum1 = funExp(20,15);
+
+// console.log(sum > sum1 );
+
+
+   // ================================================================================================
+   //👿  👿    👿  👿   👿  👿    👿  👿   👿  👿   👿  👿  arrow fucntion  (es6)(fate arrow function)  same hai but not call back
+                                              ARRW FUNCTION  AND FATE ARROW FUNCTION BOTH SAME  BUT THIS NOT CALL BACK FUNCTION
+   //also called are undoubtedly one of the popular feture  of es6 they introduced a new way  of writing concise function ( samll way)
+
+     //imp difernece 
+
+    // with retrun 
+     const tarun =(a,b)=> {return  a+b} 
+    
+    console.log(tarun(50,60))
+
+// return and paratheise  use when multiple line ahi
+
+
+ //without retrun  mean s it has specail ability arrow function  single line retrun and parathiese dont use not nesccarliy
+
+
+
+//  const taru =(a,b)=>  a+b
+    
+// console.log(taru(50,60))
+ 
+   
+// another think we can create
+
+//   let n=56
+// const taru =(a,b)=>  a+b
+    
+//     console.log(taru(60,n))
+ 
+
+    // another think we can create
+
+    
+
+
+//     let b=56
+// const taru =(a,b)=>  a+b
+    
+//     console.log(taru(60))             // it print NaN
+
+            //   
+            
+            // 6️⃣ Fat Arror Function 
+
+// 👻 Normal Way of writing Function  
+
+// console.log(sum()); 
+
+// function sum() {
+//   let a = 5; b = 6;
+//   let sum = a+b;
+//  return `the sum of the two number is ${sum}`;
+// }
+
+// 👻 How to convert in into Fat Arrow Function 
+
+// const sum = () => `the sum of the two number is ${(a=5)+(b=6)}`;
+
+// console.log(sum()); 
+
+            // =============================================================================================================================================================================================================
+
+/// callback function 
+
+    //                const kale=()=>{
+    //                   console.log("kale ")
+    //                }
+    //                const tarun=()=>{
+    //                   console.log("tarun")
+    //                }
+  
+    //            const hello =(a,b,c)=>{
+    //               console.log(a)
+    //               b()
+    //              c()
+    //            }
+ 
+    // hello("tu",tarun,kale)
+                                      //   // hua kya  tarun,kale ke naam e pe function banaya  and usko as argument pass kiya vo bhi hello function ke triugh means argument me and call inside ==a,b,c are parameter and call it  main imp baat hai ki jo varible hai hello function define kiya usme parameter  vo same hone   example 
+                                      // cosnt   hello=(a)=>{
+                                      //     a()                                        same varible 
+                                      // }
+
+    // question ariese  ki esa bhi to kr sakte hai
+
+  //   const kale=()=>{
+  //                     console.log("kale ")
+  //                  }
+  //                  const tarun=()=>{
+  //                     console.log("tarun")
+  //                  }
+  
+  //              const hello =()=>{
+  //                 console.log(`hello`)
+  //                   tarun()
+  //                   kale()
+                 
+  //              }
+  // hello ()
+
+                     //   🤔🤔🤔🤔🤔🤔🤔     yeh bhi to kaam kr  raha hai  mtalb kya nikal ta hai
+
+
+
+
+                     const kale=()=>{
+                      console.log("kale ")
+                   }
+                   const tarun=()=>{
+                      console.log("tarun")
+                   }
+                   
+                   const deepak=()=>{
+                      console.log("deepak")
+                   }
+                   
+                   const sangeeta=()=>{
+                      console.log("deepak")
+                   }
+                   
+                   const sum=()=>{
+                       let a=5
+                       let b=5
+                       console.log( a+b)
+                   }
+                 
+                   
+  
+               const hello =(a,b,c)=>{
+                  console.log(a)
+                  b()
+                  c()
+                  
+               }
+  hello ("helo",tarun,kale)
+  hello ("helo",deepak,kale)
+  hello ("helo",sangeeta,kale)
+  hello ("helo",sum,kale)
+
+  //🖐️🖐️🖐️🖐️🖐️🖐️🖐️🖐️  samach gaye matlsb function ko reuse kr sakte kese bhi  argument bhej do function bana ke imp function bana ke  pass kr do without parathises in argument jo function pass ho raha hai bs etna and jitne number of argurmt untene number of parameter
+
+ // that why we use call back function to reuse particular  task with difernt argument  sum krna hai to but differnt number pe
+
+
+
+
+
+
+
+    
+                                            
+
+    </script>
+</body>
+</html>
